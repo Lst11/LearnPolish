@@ -1,0 +1,2 @@
+com.lst11.domain
+int string app_name 0x7f150001
