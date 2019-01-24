@@ -1,12 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="50sp"
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/activityName"
+        style="@style/text_normal"
+        android:layout_width="match_parent"
         android:layout_height="50sp"
-        android:gravity="center_vertical"/>
+        android:gravity="center"
+        android:text="@string/App_name" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/activityName" />
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:drawableTop="@drawable/ic_translate"
+        android:text="Translate" />
+
+    <!--<com.google.android.material.button.MaterialButton-->
+    <!--android:id="@+id/buttonTranslate"-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_marginTop="20sp"-->
+    <!--android:text="Translate"-->
+    <!--app:iconPadding="8dp"-->
+    <!--app:iconGravity="start"-->
+    <!--app:icon="@drawable/ic_translate"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/buttonDictionary"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/guidelineLeft"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/guidelineLeft"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+    <!--<com.google.android.material.button.MaterialButton-->
+    <!--android:id="@+id/buttonDictionary"-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_marginTop="20dp"-->
+
+    <!--android:text="Dictionary"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/guidelineRight"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/buttonTranslate"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/buttonTranslate"-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="20sp"-->
+    <!--android:background="@color/green"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/buttonDictionary"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/guidelineLeft"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/guidelineLeft"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="50sp"-->
+    <!--android:layout_height="50sp"-->
+    <!--app:srcCompat="@drawable/ic_translate"-->
+    <!--android:layout_centerHorizontal="true"-->
+
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/buttonDictionary"-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_marginTop="20sp"-->
+    <!--android:background="@color/green"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/guidelineRight"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/buttonTranslate"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="50sp"-->
+    <!--android:layout_height="50sp"-->
+    <!--app:srcCompat="@drawable/ic_dictionary"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--</RelativeLayout>-->
+
 
 </android.support.constraint.ConstraintLayout>

@@ -10,6 +10,7 @@ android {
         applicationId "com.lst11.learnpolish"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -32,6 +33,7 @@ dependencies {
     implementation "com.android.support:design:$supportVersion"
     implementation "com.android.support:appcompat-v7:$supportVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
+    implementation 'com.google.android.material:material:1.0.0'
 
     //Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#a3cfff</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="background">#ffffff</color>
 
+    <!--usedColors-->
+    <color name="lightGray">#fab4b4b4</color>
+    <color name="gray">#fa6b6b6b</color>
+    <color name="darkGray">#fa414141</color>
 
+    <!--other-->
+    <color name="whiteTransparent100">#64ffffff</color>
     <color name="blue">#a1d7e2</color>
-    <color name="green">#a2e199</color>
+    <color name="green">#19a2e199</color>
     <color name="red">#efacad</color>
     <color name="primaryColorTransparent25">#190004fc</color>
-    <color name="gray">#fa595959</color>
+
     <color name="grayTransparent50">#32595959</color>
     <color name="grayTransparent100">#64595959</color>
 </resources>

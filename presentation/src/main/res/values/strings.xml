@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">LearnPolish</string>
     <string name="App_name">Learn Polish</string>
+    <string name="translate">Translate</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="trainings">Trainings</string>
+    <string name="cardsTraining">Word's cards</string>
+    <string name="timeTraining">Words in time</string>
+    <string name="translationTraining">Word\'s translation</string>
 </resources>

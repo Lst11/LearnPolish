@@ -10,7 +10,7 @@
 
     <style name="text_normal">
         <item name="android:fontFamily">@font/custom_font</item>
-        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColor">@color/darkGray</item>
         <item name="android:textSize">25sp</item>
     </style>
 
