@@ -30,7 +30,7 @@ dependencies {
     //Modules
     implementation project(path: ':data')
     //View
-    implementation "com.android.support:design:$supportVersion"
+//    implementation "com.android.support:design:$supportVersion"
     implementation "com.android.support:appcompat-v7:$supportVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
     implementation 'com.google.android.material:material:1.0.0'

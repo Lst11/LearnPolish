@@ -134,7 +134,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardTranslate" />
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardCardsTraning"
+        android:id="@+id/cardCardsTraining"
         android:layout_width="@dimen/cardSize"
         android:layout_height="@dimen/cardSize"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
@@ -177,7 +177,7 @@
         app:cardBackgroundColor="@drawable/card_color_selector"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
         app:layout_constraintEnd_toStartOf="@+id/cardTranslationTraining"
-        app:layout_constraintStart_toEndOf="@+id/cardCardsTraning">
+        app:layout_constraintStart_toEndOf="@+id/cardCardsTraining">
 
         <RelativeLayout
             android:layout_width="match_parent"
