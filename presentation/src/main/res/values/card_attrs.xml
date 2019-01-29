@@ -4,5 +4,6 @@
     <declare-styleable name="CardView">
         <attr name="image" format="reference"/>
         <attr name="text" format="string"/>
+        <attr name="lineColor" format="color"/>
     </declare-styleable>
 </resources>

@@ -1,248 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+                                                        
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guidelineLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+    
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guidelineRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
+                 
+                            
+                                                                             
+           
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guidelineBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.92" />
-
-    <TextView
-        android:id="@+id/activityName"
-        style="@style/text_normal"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:gravity="center"
-        android:text="@string/App_name" />
+        android:layout_height="match_parent" android:tag="layout/activity_home_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="@dimen/cardSize"
-        android:layout_height="@dimen/cardSize"
-        app:layout_constraintBottom_toTopOf="@+id/cardTranslate"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/activityName" />
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardTranslate"
-        android:layout_width="@dimen/cardSize"
-        android:layout_height="@dimen/cardSize"
-        app:cardBackgroundColor="@drawable/card_color_selector"
-        app:layout_constraintBottom_toTopOf="@+id/sectionTextView"
-        app:layout_constraintEnd_toStartOf="@+id/cardDictionary"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
 
-        <RelativeLayout
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <TextView
+            android:id="@+id/activityName"
+            style="@style/text_normal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:text="@string/App_name" />
 
-            <ImageView
-                android:layout_width="60sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5sp"
-                app:srcCompat="@drawable/ic_translate" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="@dimen/cardSize"
+            app:layout_constraintBottom_toTopOf="@+id/cardTranslate"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/activityName" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="10sp"
-                android:gravity="center"
-                android:text="@string/translate"
-                android:textColor="@color/darkGray" />
+        <com.lst11.learnpolish.presentation.utils.CardView
+            android:id="@+id/cardTranslate"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="@dimen/cardSize"
+            app:image="@drawable/ic_translate"
+            app:layout_constraintBottom_toTopOf="@+id/trainingsTextView"
+            app:layout_constraintEnd_toStartOf="@+id/cardDictionary"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:lineColor="@color/colorPrimary"
+            app:text="@string/translate" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorPrimary" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+        <com.lst11.learnpolish.presentation.utils.CardView
+            android:id="@+id/cardDictionary"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="@dimen/cardSize"
+            app:image="@drawable/ic_dictionary"
+            app:layout_constraintBottom_toTopOf="@+id/trainingsTextView"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/cardTranslate"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:lineColor="@color/colorPrimary"
+            app:text="@string/dictionary" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardDictionary"
-        android:layout_width="@dimen/cardSize"
-        android:layout_height="@dimen/cardSize"
-        app:cardBackgroundColor="@drawable/card_color_selector"
-        app:layout_constraintBottom_toBottomOf="@+id/cardTranslate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/cardTranslate">
-
-        <RelativeLayout
+        <TextView
+            android:id="@+id/trainingsTextView"
+            style="@style/text_normal"
             android:layout_width="match_parent"
-            android:layout_height="103dp">
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:text="@string/trainings"
+            app:layout_constraintBottom_toTopOf="@+id/cardCardsTraining"
+            app:layout_constraintTop_toBottomOf="@+id/cardTranslate" />
 
-            <ImageView
-                android:layout_width="60sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5sp"
-                app:srcCompat="@drawable/ic_dictionary" />
+        <com.lst11.learnpolish.presentation.utils.CardView
+            android:id="@+id/cardCardsTraining"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="@dimen/cardSize"
+            app:image="@drawable/ic_cards"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+            app:layout_constraintEnd_toStartOf="@+id/cardTimeTraining"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/trainingsTextView"
+            app:lineColor="@color/colorPrimaryDark"
+            app:text="@string/cardsTraining" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="10sp"
-                android:gravity="center"
-                android:text="@string/dictionary"
-                android:textColor="@color/darkGray" />
+        <com.lst11.learnpolish.presentation.utils.CardView
+            android:id="@+id/cardTimeTraining"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="@dimen/cardSize"
+            app:image="@drawable/ic_clock"
+            app:layout_constraintEnd_toStartOf="@+id/cardTranslationTraining"
+            app:layout_constraintStart_toEndOf="@+id/cardCardsTraining"
+            app:layout_constraintTop_toTopOf="@+id/cardCardsTraining"
+            app:lineColor="@color/colorPrimaryDark"
+            app:text="@string/timeTraining" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorPrimary" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <TextView
-        android:id="@+id/sectionTextView"
-        style="@style/text_normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/trainings"
-        app:layout_constraintBottom_toTopOf="@+id/cardTimeTraining"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardTranslate" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardCardsTraning"
-        android:layout_width="@dimen/cardSize"
-        android:layout_height="@dimen/cardSize"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
-        app:layout_constraintEnd_toStartOf="@+id/cardTimeTraining"
-        app:layout_constraintStart_toStartOf="@+id/guidelineLeft">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/background">
-
-            <ImageView
-                android:layout_width="60sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5sp"
-                app:srcCompat="@drawable/ic_cards" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="10sp"
-                android:gravity="center"
-                android:text="@string/cardsTraining"
-                android:textColor="@color/darkGray" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorPrimaryDark" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardTimeTraining"
-        android:layout_width="@dimen/cardSize"
-        android:layout_height="@dimen/cardSize"
-        app:cardBackgroundColor="@drawable/card_color_selector"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
-        app:layout_constraintEnd_toStartOf="@+id/cardTranslationTraining"
-        app:layout_constraintStart_toEndOf="@+id/cardCardsTraning">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="60sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5sp"
-                app:srcCompat="@drawable/ic_clock" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="10sp"
-                android:gravity="center"
-                android:text="@string/timeTraining"
-                android:textColor="@color/darkGray" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorPrimaryDark" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardTranslationTraining"
-        android:layout_width="@dimen/cardSize"
-        android:layout_height="@dimen/cardSize"
-        app:cardBackgroundColor="@drawable/card_color_selector"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/cardTimeTraining">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="60sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5sp"
-                app:srcCompat="@drawable/ic_brain" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="10sp"
-                android:gravity="center"
-                android:text="@string/translationTraining"
-                android:textColor="@color/darkGray" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorPrimaryDark" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-</android.support.constraint.ConstraintLayout>
+        <com.lst11.learnpolish.presentation.utils.CardView
+            android:id="@+id/cardTranslationTraining"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="@dimen/cardSize"
+            app:image="@drawable/ic_brain"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/cardTimeTraining"
+            app:layout_constraintTop_toBottomOf="@+id/trainingsTextView"
+            app:lineColor="@color/colorPrimaryDark"
+            app:text="@string/translationTraining" />
+    </android.support.constraint.ConstraintLayout>
+         

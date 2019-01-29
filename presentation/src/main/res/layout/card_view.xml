@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/cardSize"
     android:layout_height="@dimen/cardSize"
-    android:background="@drawable/card_color_selector">
+    android:background="@drawable/card_color_selector"
+    android:clickable="true">
+
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="60sp"
         android:layout_height="60sp"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5sp"
+        android:layout_margin="3sp"
         tools:src="@color/colorPrimary" />
 
     <TextView
@@ -25,9 +27,10 @@
         tools:text="Caption" />
 
     <ImageView
-        android:id="@+id/lineBottom"
+        android:id="@+id/line"
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:visibility="visible"
+        android:layout_height="5dp"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary" />
 </RelativeLayout>
