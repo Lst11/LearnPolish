@@ -992,6 +992,10 @@
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\e9b0c64436516d178d8a773b8b7380c9\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "C:\\Users\\User\\Desktop\\lp\\presentation\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_home.xml.flat",
+        "source": "C:\\Users\\User\\Desktop\\lp\\presentation\\src\\main\\res\\layout-land\\activity_home.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\Desktop\\lp\\presentation\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3b5532efbf06139d779b427c4368caea\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
