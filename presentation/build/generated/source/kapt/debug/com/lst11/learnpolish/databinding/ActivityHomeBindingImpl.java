@@ -48,7 +48,7 @@ public class ActivityHomeBindingImpl extends ActivityHomeBinding  {
             , (android.support.constraint.Guideline) bindings[3]
             , (android.support.constraint.Guideline) bindings[1]
             , (android.support.constraint.Guideline) bindings[2]
-            , (android.widget.ImageView) bindings[5]
+            , (com.lst11.learnpolish.presentation.utils.CustomProgressBar) bindings[5]
             , (android.widget.TextView) bindings[8]
             );
         this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];

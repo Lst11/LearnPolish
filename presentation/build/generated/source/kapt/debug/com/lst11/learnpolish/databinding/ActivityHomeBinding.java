@@ -24,7 +24,7 @@ public abstract class ActivityHomeBinding extends ViewDataBinding {
     @NonNull
     public final android.support.constraint.Guideline guidelineRight;
     @NonNull
-    public final android.widget.ImageView imageView;
+    public final com.lst11.learnpolish.presentation.utils.CustomProgressBar imageView;
     @Nullable
     public final android.widget.TextView trainingsTextView;
     // variables
@@ -39,7 +39,7 @@ public abstract class ActivityHomeBinding extends ViewDataBinding {
         , android.support.constraint.Guideline guidelineBottom1
         , android.support.constraint.Guideline guidelineLeft1
         , android.support.constraint.Guideline guidelineRight1
-        , android.widget.ImageView imageView1
+        , com.lst11.learnpolish.presentation.utils.CustomProgressBar imageView1
         , android.widget.TextView trainingsTextView1
     ) {
         super(bindingComponent, root_, localFieldCount);

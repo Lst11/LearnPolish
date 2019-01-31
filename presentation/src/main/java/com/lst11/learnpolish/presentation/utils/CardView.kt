@@ -1,7 +1,6 @@
 package com.lst11.learnpolish.presentation.utils
 
 import android.content.Context
-import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.ImageView
 import android.widget.RelativeLayout
@@ -9,6 +8,7 @@ import android.widget.TextView
 import com.lst11.learnpolish.R
 
 class CardView(context: Context, attrs: AttributeSet) : RelativeLayout(context, attrs) {
+
     init {
         inflate(context, R.layout.card_view, this)
         val imageView: ImageView = findViewById(R.id.image)

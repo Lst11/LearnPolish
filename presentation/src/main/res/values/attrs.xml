@@ -6,4 +6,10 @@
         <attr name="text" format="string"/>
         <attr name="lineColor" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="amount" format="integer"/>
+        <attr name="progress" format="integer"/>
+    </declare-styleable>
+
 </resources>
