@@ -18,5 +18,6 @@ class HomeActivity : BaseMvvmActivity<HomeViewModel, Router, ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 }

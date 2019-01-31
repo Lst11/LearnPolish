@@ -2045,7 +2045,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3649,28 +3649,29 @@ public final class R {
     public static final int design_ic_visibility_off=0x7f070060;
     public static final int design_password_eye=0x7f070061;
     public static final int design_snackbar_background=0x7f070062;
-    public static final int ic_brain=0x7f070063;
-    public static final int ic_cards=0x7f070064;
-    public static final int ic_clock=0x7f070065;
-    public static final int ic_dictionary=0x7f070066;
-    public static final int ic_launcher_background=0x7f070067;
-    public static final int ic_launcher_foreground=0x7f070068;
-    public static final int ic_translate=0x7f070069;
-    public static final int navigation_empty_icon=0x7f07006a;
-    public static final int notification_action_background=0x7f07006b;
-    public static final int notification_bg=0x7f07006c;
-    public static final int notification_bg_low=0x7f07006d;
-    public static final int notification_bg_low_normal=0x7f07006e;
-    public static final int notification_bg_low_pressed=0x7f07006f;
-    public static final int notification_bg_normal=0x7f070070;
-    public static final int notification_bg_normal_pressed=0x7f070071;
-    public static final int notification_icon_background=0x7f070072;
-    public static final int notification_template_icon_bg=0x7f070073;
-    public static final int notification_template_icon_low_bg=0x7f070074;
-    public static final int notification_tile_bg=0x7f070075;
-    public static final int notify_panel_notification_icon_bg=0x7f070076;
-    public static final int tooltip_frame_dark=0x7f070077;
-    public static final int tooltip_frame_light=0x7f070078;
+    public static final int ic_backgroung=0x7f070063;
+    public static final int ic_brain=0x7f070064;
+    public static final int ic_cards=0x7f070065;
+    public static final int ic_clock=0x7f070066;
+    public static final int ic_dictionary=0x7f070067;
+    public static final int ic_launcher_background=0x7f070068;
+    public static final int ic_launcher_foreground=0x7f070069;
+    public static final int ic_translate=0x7f07006a;
+    public static final int navigation_empty_icon=0x7f07006b;
+    public static final int notification_action_background=0x7f07006c;
+    public static final int notification_bg=0x7f07006d;
+    public static final int notification_bg_low=0x7f07006e;
+    public static final int notification_bg_low_normal=0x7f07006f;
+    public static final int notification_bg_low_pressed=0x7f070070;
+    public static final int notification_bg_normal=0x7f070071;
+    public static final int notification_bg_normal_pressed=0x7f070072;
+    public static final int notification_icon_background=0x7f070073;
+    public static final int notification_template_icon_bg=0x7f070074;
+    public static final int notification_template_icon_low_bg=0x7f070075;
+    public static final int notification_tile_bg=0x7f070076;
+    public static final int notify_panel_notification_icon_bg=0x7f070077;
+    public static final int tooltip_frame_dark=0x7f070078;
+    public static final int tooltip_frame_light=0x7f070079;
   }
   public static final class font {
     public static final int caviar_dreams_font=0x7f080000;
@@ -9164,7 +9165,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
