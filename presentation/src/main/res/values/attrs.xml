@@ -12,4 +12,9 @@
         <attr name="progress" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="TopBarView">
+        <attr name="visibilityButtonBack" format="boolean"/>
+        <attr name="visibilityButtonSettings" format="boolean"/>
+    </declare-styleable>
+
 </resources>

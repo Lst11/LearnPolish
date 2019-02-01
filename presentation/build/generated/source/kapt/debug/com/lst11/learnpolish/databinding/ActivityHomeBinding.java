@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 public abstract class ActivityHomeBinding extends ViewDataBinding {
     @NonNull
-    public final android.widget.TextView activityName;
+    public final com.lst11.learnpolish.presentation.utils.TopBarView activityName;
     @NonNull
     public final android.widget.ImageView background;
     @NonNull
@@ -32,7 +32,7 @@ public abstract class ActivityHomeBinding extends ViewDataBinding {
     // variables
     protected com.lst11.learnpolish.presentation.screen.HomeViewModel mViewModel;
     protected ActivityHomeBinding(@Nullable android.databinding.DataBindingComponent bindingComponent, @Nullable android.view.View root_, int localFieldCount
-        , android.widget.TextView activityName1
+        , com.lst11.learnpolish.presentation.utils.TopBarView activityName1
         , android.widget.ImageView background1
         , com.lst11.learnpolish.presentation.utils.CardView cardCardsTraining1
         , com.lst11.learnpolish.presentation.utils.CardView cardDictionary1

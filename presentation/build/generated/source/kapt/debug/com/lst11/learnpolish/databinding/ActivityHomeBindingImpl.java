@@ -40,7 +40,7 @@ public class ActivityHomeBindingImpl extends ActivityHomeBinding  {
     }
     private ActivityHomeBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[5]
+            , (com.lst11.learnpolish.presentation.utils.TopBarView) bindings[5]
             , (android.widget.ImageView) bindings[1]
             , (com.lst11.learnpolish.presentation.utils.CardView) bindings[10]
             , (com.lst11.learnpolish.presentation.utils.CardView) bindings[8]

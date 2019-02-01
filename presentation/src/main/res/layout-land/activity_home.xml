@@ -42,13 +42,14 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.95" />
 
-        <TextView
+        <com.lst11.learnpolish.presentation.utils.TopBarView
             android:id="@+id/activityName"
-            style="@style/text_normal"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:gravity="center"
-            android:text="@string/App_name" />
+            android:layout_height="0sp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".1"
+            app:visibilityButtonBack="true"
+            app:visibilityButtonSettings="true" />
 
         <com.lst11.learnpolish.presentation.utils.CustomProgressBar
             android:id="@+id/imageView"
@@ -56,7 +57,6 @@
             android:layout_height="70dp"
             app:amount="360"
             app:layout_constraintBottom_toTopOf="@+id/cardTranslate"
-
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
             app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
@@ -66,7 +66,7 @@
         <com.lst11.learnpolish.presentation.utils.CardView
             android:id="@+id/cardTranslate"
             android:layout_width="@dimen/cardSize"
-            android:layout_height="101dp"
+            android:layout_height="@dimen/cardSize"
             app:image="@drawable/ic_translate"
             app:layout_constraintEnd_toStartOf="@+id/cardDictionary"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"

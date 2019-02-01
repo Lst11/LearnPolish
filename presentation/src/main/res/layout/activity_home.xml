@@ -41,19 +41,19 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.92" />
 
-        <TextView
+        <com.lst11.learnpolish.presentation.utils.TopBarView
             android:id="@+id/activityName"
-            style="@style/text_normal"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:background="@color/lightGray"
-            android:gravity="center"
-            android:text="@string/App_name" />
+            android:layout_height="0sp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".1"
+            app:visibilityButtonBack="true"
+            app:visibilityButtonSettings="true" />
 
         <com.lst11.learnpolish.presentation.utils.CustomProgressBar
             android:id="@+id/imageView"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             app:amount="360"
             app:layout_constraintBottom_toTopOf="@+id/cardTranslate"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
@@ -90,6 +90,7 @@
             android:id="@+id/trainingsTextView"
             style="@style/text_normal"
             android:layout_width="match_parent"
+            android:textColor="@color/white"
             android:layout_height="50sp"
             android:gravity="center"
             android:text="@string/trainings"
