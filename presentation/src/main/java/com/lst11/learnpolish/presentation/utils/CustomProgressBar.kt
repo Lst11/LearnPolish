@@ -45,28 +45,25 @@ class CustomProgressBar(context: Context, attrs: AttributeSet) : View(context, a
         val radius = Math.min(width / 2, height / 2).toFloat()
         val xEdge = height / 2 - radius
         val xLine = (width / 2).toFloat()
-        val yStartLine = radius * 0.1f
-        val yEndLine = radius * 0f
+        val yStartLine = radius * 0.2f
+        var yEndLine = radius * 0f
         val step = (360 / 24).toFloat()
 
         canvas.save()
-        Log.e("aaa", "height is $height")
-        Log.e("aaa", "width is $width")
-        Log.e("aaa", "radius is $radius")
-        Log.e("aaa", "xLine is $xLine")
-        Log.e("aaa", "xEdge is $xEdge")
 
         val stepsDark = (360 / 360 * 90) / step
 
         canvas.drawLine(xLine, yStartLine, xLine, yEndLine, paintPrimaryDark)
 
-        for (i in 0 until 23) {
+        for (i in 1 until 24) {
+            if (i%4==0){
+                yEndLine = radius * 0f
+            } else yEndLine = radius * 0.1f
+
             canvas.rotate(step, (width / 2).toFloat(), (height / 2).toFloat())
             if (i < stepsDark) {
                 canvas.drawLine(xLine, yStartLine, xLine, yEndLine, paintPrimaryDark)
             } else canvas.drawLine(xLine, yStartLine, xLine, yEndLine, paintPrimary)
-
-            Log.e("aaa", "Draw $i: xLine is $xLine, yStartLine is $yStartLine, yEndLine is $yEndLine")
         }
         canvas.restore() //change rotate to canvas.save
     }

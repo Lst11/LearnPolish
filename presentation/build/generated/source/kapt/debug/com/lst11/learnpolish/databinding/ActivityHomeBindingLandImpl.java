@@ -14,16 +14,17 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.guidelineLeft, 1);
-        sViewsWithIds.put(R.id.guidelineRight, 2);
-        sViewsWithIds.put(R.id.guidelineBottom, 3);
-        sViewsWithIds.put(R.id.activityName, 4);
-        sViewsWithIds.put(R.id.imageView, 5);
-        sViewsWithIds.put(R.id.cardTranslate, 6);
-        sViewsWithIds.put(R.id.cardDictionary, 7);
-        sViewsWithIds.put(R.id.cardCardsTraining, 8);
-        sViewsWithIds.put(R.id.cardTimeTraining, 9);
-        sViewsWithIds.put(R.id.cardTranslationTraining, 10);
+        sViewsWithIds.put(R.id.background, 1);
+        sViewsWithIds.put(R.id.guidelineLeft, 2);
+        sViewsWithIds.put(R.id.guidelineRight, 3);
+        sViewsWithIds.put(R.id.guidelineBottom, 4);
+        sViewsWithIds.put(R.id.activityName, 5);
+        sViewsWithIds.put(R.id.imageView, 6);
+        sViewsWithIds.put(R.id.cardTranslate, 7);
+        sViewsWithIds.put(R.id.cardDictionary, 8);
+        sViewsWithIds.put(R.id.cardCardsTraining, 9);
+        sViewsWithIds.put(R.id.cardTimeTraining, 10);
+        sViewsWithIds.put(R.id.cardTranslationTraining, 11);
     }
     // views
     @NonNull
@@ -34,20 +35,21 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityHomeBindingLandImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private ActivityHomeBindingLandImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[4]
-            , (com.lst11.learnpolish.presentation.utils.CardView) bindings[8]
-            , (com.lst11.learnpolish.presentation.utils.CardView) bindings[7]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.ImageView) bindings[1]
             , (com.lst11.learnpolish.presentation.utils.CardView) bindings[9]
-            , (com.lst11.learnpolish.presentation.utils.CardView) bindings[6]
+            , (com.lst11.learnpolish.presentation.utils.CardView) bindings[8]
             , (com.lst11.learnpolish.presentation.utils.CardView) bindings[10]
-            , (android.support.constraint.Guideline) bindings[3]
-            , (android.support.constraint.Guideline) bindings[1]
+            , (com.lst11.learnpolish.presentation.utils.CardView) bindings[7]
+            , (com.lst11.learnpolish.presentation.utils.CardView) bindings[11]
+            , (android.support.constraint.Guideline) bindings[4]
             , (android.support.constraint.Guideline) bindings[2]
-            , (com.lst11.learnpolish.presentation.utils.CustomProgressBar) bindings[5]
+            , (android.support.constraint.Guideline) bindings[3]
+            , (com.lst11.learnpolish.presentation.utils.CustomProgressBar) bindings[6]
             , null
             );
         this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];

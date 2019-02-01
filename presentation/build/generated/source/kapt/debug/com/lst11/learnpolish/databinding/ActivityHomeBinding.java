@@ -8,6 +8,8 @@ public abstract class ActivityHomeBinding extends ViewDataBinding {
     @NonNull
     public final android.widget.TextView activityName;
     @NonNull
+    public final android.widget.ImageView background;
+    @NonNull
     public final com.lst11.learnpolish.presentation.utils.CardView cardCardsTraining;
     @NonNull
     public final com.lst11.learnpolish.presentation.utils.CardView cardDictionary;
@@ -31,6 +33,7 @@ public abstract class ActivityHomeBinding extends ViewDataBinding {
     protected com.lst11.learnpolish.presentation.screen.HomeViewModel mViewModel;
     protected ActivityHomeBinding(@Nullable android.databinding.DataBindingComponent bindingComponent, @Nullable android.view.View root_, int localFieldCount
         , android.widget.TextView activityName1
+        , android.widget.ImageView background1
         , com.lst11.learnpolish.presentation.utils.CardView cardCardsTraining1
         , com.lst11.learnpolish.presentation.utils.CardView cardDictionary1
         , com.lst11.learnpolish.presentation.utils.CardView cardTimeTraining1
@@ -44,6 +47,7 @@ public abstract class ActivityHomeBinding extends ViewDataBinding {
     ) {
         super(bindingComponent, root_, localFieldCount);
         this.activityName = activityName1;
+        this.background = background1;
         this.cardCardsTraining = cardCardsTraining1;
         this.cardDictionary = cardDictionary1;
         this.cardTimeTraining = cardTimeTraining1;
