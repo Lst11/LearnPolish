@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/text_normal"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_alignParentBottom="true"
         android:layout_margin="10sp"
         android:gravity="center"

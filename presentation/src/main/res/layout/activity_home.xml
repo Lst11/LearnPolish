@@ -44,10 +44,8 @@
         <com.lst11.learnpolish.presentation.utils.TopBarView
             android:id="@+id/activityName"
             android:layout_width="match_parent"
-            android:layout_height="0sp"
-            app:layout_constraintHeight_default="percent"
-            app:layout_constraintHeight_percent=".1"
-            app:visibilityButtonBack="true"
+            android:layout_height="@dimen/topBarHeight"
+            app:visibilityButtonBack="false"
             app:visibilityButtonSettings="true" />
 
         <com.lst11.learnpolish.presentation.utils.CustomProgressBar

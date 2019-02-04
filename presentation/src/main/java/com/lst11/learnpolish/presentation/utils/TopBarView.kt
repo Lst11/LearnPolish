@@ -16,7 +16,7 @@ class TopBarView(context: Context, attrs: AttributeSet) : RelativeLayout(context
         val buttonSettings: ImageView = findViewById(R.id.buttonSettings)
 
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.TopBarView)
-        if (!attributes.getBoolean(R.styleable.TopBarView_visibilityButtonBack, false)) buttonBack.visibility = View.VISIBLE
+        if (attributes.getBoolean(R.styleable.TopBarView_visibilityButtonBack, false)) buttonBack.visibility = View.VISIBLE
         else buttonBack.visibility = View.INVISIBLE
         if (attributes.getBoolean(R.styleable.TopBarView_visibilityButtonSettings, false)) buttonSettings.visibility = View.VISIBLE
         else buttonSettings.visibility = View.INVISIBLE

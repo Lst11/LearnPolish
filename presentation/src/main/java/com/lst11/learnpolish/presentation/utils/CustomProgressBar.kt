@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.*
 import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import com.lst11.learnpolish.R
 
@@ -43,7 +42,6 @@ class CustomProgressBar(context: Context, attrs: AttributeSet) : View(context, a
         paintPrimary.strokeWidth = 3f
 
         val radius = Math.min(width / 2, height / 2).toFloat()
-        val xEdge = height / 2 - radius
         val xLine = (width / 2).toFloat()
         val yStartLine = radius * 0.2f
         var yEndLine = radius * 0f
@@ -56,7 +54,7 @@ class CustomProgressBar(context: Context, attrs: AttributeSet) : View(context, a
         canvas.drawLine(xLine, yStartLine, xLine, yEndLine, paintPrimaryDark)
 
         for (i in 1 until 24) {
-            if (i%4==0){
+            if (i % 4 == 0) {
                 yEndLine = radius * 0f
             } else yEndLine = radius * 0.1f
 

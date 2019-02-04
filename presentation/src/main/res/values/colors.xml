@@ -3,10 +3,10 @@
     <color name="colorPrimary">#a3cfff</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="white">#ffffff</color>
-    <color name="background">#ffffff</color>
+    <color name="whiteTransparent200">#c8ffffff</color>
 
     <!--usedColors-->
-    <color name="lightGray">#fab4b4b4</color>
+    <color name="lightGrayTransparent200">#fab4b4b4</color>
     <color name="gray">#fa6b6b6b</color>
     <color name="darkGray">#fa414141</color>
 
