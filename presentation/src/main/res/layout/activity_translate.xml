@@ -1,8 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.lst11.learnpolish.presentation.screen.translator.TranslateViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.lst11.learnpolish.presentation.utils.TopBarView
+            android:id="@+id/activityName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topBarHeight"
+            app:visibilityButtonBack="true"
+            app:visibilityButtonSettings="false" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/translateEditText"-->
+        <!--style="@style/text_normal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0sp"-->
+        <!--android:background="@drawable/rounded_edittext"-->
+        <!--android:gravity="top"-->
+        <!--android:hint="hint"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:padding="10sp"-->
+        <!--android:paddingEnd="35sp"-->
+        <!--android:paddingRight="15sp"-->
+        <!--android:text="@={viewModel.wordPl}"-->
+        <!--app:layout_constraintDimensionRatio="2:1" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/searchButton"-->
+        <!--android:layout_width="@dimen/width_button"-->
+        <!--android:layout_height="@dimen/height_button"-->
+        <!--android:layout_margin="10sp"-->
+        <!--android:clickable="true"-->
+        <!--android:onClick="@{viewModel::onClickTranslate}"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/translateEditText"-->
+        <!--app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/clearButton"-->
+        <!--android:layout_width="@dimen/width_button"-->
+        <!--android:layout_height="@dimen/height_button"-->
+        <!--android:layout_margin="10sp"-->
+        <!--android:clickable="true"-->
+        <!--android:onClick="@{viewModel::onClickDelete}"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/searchButton"-->
+        <!--app:srcCompat="@drawable/ic_clear_24dp" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0sp"-->
+        <!--android:layout_marginTop="30sp"-->
+        <!--android:background="@drawable/rounded_recycler_view"-->
+        <!--android:padding="10sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/layout"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/translateEditText" />-->
 
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>

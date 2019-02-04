@@ -2,7 +2,6 @@ package com.lst11.learnpolish.presentation.screen
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v7.app.AppCompatDelegate
 import com.lst11.learnpolish.R
 import com.lst11.learnpolish.databinding.ActivityHomeBinding
 import com.lst11.learnpolish.presentation.base.BaseMvvmActivity

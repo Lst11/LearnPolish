@@ -64,6 +64,8 @@
             android:id="@+id/cardTranslate"
             android:layout_width="@dimen/cardSize"
             android:layout_height="@dimen/cardSize"
+            android:clickable="true"
+            android:onClick="@{() -> viewModel.onClickTranslate()}"
             app:image="@drawable/ic_translate"
             app:layout_constraintBottom_toTopOf="@+id/trainingsTextView"
             app:layout_constraintEnd_toStartOf="@+id/cardDictionary"
@@ -88,10 +90,10 @@
             android:id="@+id/trainingsTextView"
             style="@style/text_normal"
             android:layout_width="match_parent"
-            android:textColor="@color/white"
             android:layout_height="50sp"
             android:gravity="center"
             android:text="@string/trainings"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/cardCardsTraining"
             app:layout_constraintTop_toBottomOf="@+id/cardTranslate" />
 

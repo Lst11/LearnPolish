@@ -17,5 +17,7 @@
             </intent-filter>
 
         </activity>
+
+        <activity android:name=".presentation.screen.TranslateActivity"/>
     </application>
 </manifest>

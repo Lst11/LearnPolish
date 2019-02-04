@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:1-21:12
+ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:1-23:12
+INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:1-23:12
 MERGED from [com.android.databinding:adapters:3.1.4] C:\Users\User\.gradle\caches\transforms-1\files-1.1\adapters-3.1.4.aar\bd0939f6ef9da23a95d9b3c2f0b4115d\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.databinding:library:3.1.4] C:\Users\User\.gradle\caches\transforms-1\files-1.1\library-3.1.4.aar\532eb7e2ec94fd8cf1e79d2d477944b2\AndroidManifest.xml:17:1-24:12
 MERGED from [:data] C:\Users\User\Desktop\lp\data\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
@@ -25,7 +25,7 @@ MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\User\.gradle\caches\
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\69e8ef474fb6e3bbe8d9c1a34b522cac\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\5997f5f0718ec05c6eba71dfebed7a70\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c20f5745c126767fcaa6cddb5c648bbe\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:1-23:12
 	package
 		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:2:5-36
 		INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml
@@ -33,7 +33,7 @@ INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:4:5-20:19
+ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:4:5-22:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\0d3ee0c81d2a61426d1feb8b0ea5b617\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\0d3ee0c81d2a61426d1feb8b0ea5b617\AndroidManifest.xml:9:5-20
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\8198783d009337a8aa7c890d5c088fe7\AndroidManifest.xml:22:5-28:19
@@ -64,6 +64,10 @@ action#android.intent.action.MAIN
 ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:16:17-69
 	android:name
 		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:16:25-66
+activity#com.lst11.learnpolish.presentation.screen.TranslateActivity
+ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:21:9-74
+	android:name
+		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:21:19-72
 uses-sdk
 INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml
