@@ -65,7 +65,7 @@
             android:layout_width="@dimen/cardSize"
             android:layout_height="@dimen/cardSize"
             android:clickable="true"
-            android:tag="binding_1"                                
+            android:onClick="onClickTranslate"
             app:image="@drawable/ic_translate"
             app:layout_constraintBottom_toTopOf="@+id/trainingsTextView"
             app:layout_constraintEnd_toStartOf="@+id/cardDictionary"
@@ -73,6 +73,8 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:lineColor="@color/colorPrimary"
             app:text="@string/translate" />
+
+        <!--android:onClick="@{() -> viewModel.onClickTranslate()}"-->
 
         <com.lst11.learnpolish.presentation.utils.CardView
             android:id="@+id/cardDictionary"
