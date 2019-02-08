@@ -6,7 +6,7 @@
     <color name="whiteTransparent200">#c8ffffff</color>
 
     <!--usedColors-->
-    <color name="lightGrayTransparent200">#fab4b4b4</color>
+    <color name="lightGrayTransparent200">#c8b4b4b4</color>
     <color name="gray">#fa6b6b6b</color>
     <color name="darkGray">#fa414141</color>
 
