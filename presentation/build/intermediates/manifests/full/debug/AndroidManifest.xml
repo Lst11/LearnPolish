@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.lst11.learnpolish.presentation.screen.TranslateActivity"
+            android:name="com.lst11.learnpolish.presentation.screen.translator.TranslateActivity"
             android:noHistory="true" />
 
         <provider

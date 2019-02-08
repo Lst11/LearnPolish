@@ -30,9 +30,9 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding implements 
     @Nullable
     private final android.view.View.OnClickListener mCallback8;
     @Nullable
-    private final android.view.View.OnClickListener mCallback7;
-    @Nullable
     private final android.view.View.OnClickListener mCallback11;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback12;
     @Nullable
     private final android.view.View.OnClickListener mCallback10;
     // values
@@ -66,11 +66,11 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding implements 
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback9 = new android.databinding.generated.callback.OnClickListener(this, 3);
-        mCallback8 = new android.databinding.generated.callback.OnClickListener(this, 2);
-        mCallback7 = new android.databinding.generated.callback.OnClickListener(this, 1);
-        mCallback11 = new android.databinding.generated.callback.OnClickListener(this, 5);
-        mCallback10 = new android.databinding.generated.callback.OnClickListener(this, 4);
+        mCallback9 = new android.databinding.generated.callback.OnClickListener(this, 2);
+        mCallback8 = new android.databinding.generated.callback.OnClickListener(this, 1);
+        mCallback11 = new android.databinding.generated.callback.OnClickListener(this, 4);
+        mCallback12 = new android.databinding.generated.callback.OnClickListener(this, 5);
+        mCallback10 = new android.databinding.generated.callback.OnClickListener(this, 3);
         invalidateAll();
     }
 
@@ -132,34 +132,17 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding implements 
         if ((dirtyFlags & 0x2L) != 0) {
             // api target 1
 
-            this.cardCardsTraining.setOnClickListener(mCallback9);
-            this.cardDictionary.setOnClickListener(mCallback8);
-            this.cardTimeTraining.setOnClickListener(mCallback10);
-            this.cardTranslate.setOnClickListener(mCallback7);
-            this.cardTranslationTraining.setOnClickListener(mCallback11);
+            this.cardCardsTraining.setOnClickListener(mCallback10);
+            this.cardDictionary.setOnClickListener(mCallback9);
+            this.cardTimeTraining.setOnClickListener(mCallback11);
+            this.cardTranslate.setOnClickListener(mCallback8);
+            this.cardTranslationTraining.setOnClickListener(mCallback12);
         }
     }
     // Listener Stub Implementations
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
         switch(sourceId) {
-            case 3: {
-                // localize variables for thread safety
-                // viewModel
-                com.lst11.learnpolish.presentation.screen.HomeViewModel viewModel = mViewModel;
-                // viewModel != null
-                boolean viewModelJavaLangObjectNull = false;
-
-
-
-                viewModelJavaLangObjectNull = (viewModel) != (null);
-                if (viewModelJavaLangObjectNull) {
-
-
-                    viewModel.onClickCardsTraining();
-                }
-                break;
-            }
             case 2: {
                 // localize variables for thread safety
                 // viewModel
@@ -194,6 +177,23 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding implements 
                 }
                 break;
             }
+            case 4: {
+                // localize variables for thread safety
+                // viewModel
+                com.lst11.learnpolish.presentation.screen.HomeViewModel viewModel = mViewModel;
+                // viewModel != null
+                boolean viewModelJavaLangObjectNull = false;
+
+
+
+                viewModelJavaLangObjectNull = (viewModel) != (null);
+                if (viewModelJavaLangObjectNull) {
+
+
+                    viewModel.onClickTimeTraining();
+                }
+                break;
+            }
             case 5: {
                 // localize variables for thread safety
                 // viewModel
@@ -211,7 +211,7 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding implements 
                 }
                 break;
             }
-            case 4: {
+            case 3: {
                 // localize variables for thread safety
                 // viewModel
                 com.lst11.learnpolish.presentation.screen.HomeViewModel viewModel = mViewModel;
@@ -224,7 +224,7 @@ public class ActivityHomeBindingLandImpl extends ActivityHomeBinding implements 
                 if (viewModelJavaLangObjectNull) {
 
 
-                    viewModel.onClickTimeTraining();
+                    viewModel.onClickCardsTraining();
                 }
                 break;
             }

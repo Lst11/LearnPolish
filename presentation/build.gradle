@@ -29,7 +29,6 @@ dependencies {
     //Modules
     implementation project(path: ':data')
     //View
-
     implementation "com.android.support:design:$supportVersion"
     implementation "com.android.support:appcompat-v7:$supportVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
@@ -46,6 +45,10 @@ dependencies {
     //MVVM
     implementation "android.arch.lifecycle:extensions:$archVersion"
     implementation "android.arch.lifecycle:viewmodel:$archVersion"
+
+    // dagger 2
+    implementation 'com.google.dagger:dagger:2.16'
+    kapt 'com.google.dagger:dagger-compiler:2.16'
 
     configurations.all {
         resolutionStrategy.eachDependency { DependencyResolveDetails details ->

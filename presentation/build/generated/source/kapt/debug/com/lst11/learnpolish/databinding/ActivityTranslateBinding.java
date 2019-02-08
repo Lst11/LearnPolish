@@ -56,7 +56,7 @@ public class ActivityTranslateBinding extends android.databinding.ViewDataBindin
     @Nullable
     private final android.view.View.OnClickListener mCallback13;
     @Nullable
-    private final android.view.View.OnClickListener mCallback12;
+    private final android.view.View.OnClickListener mCallback14;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -121,8 +121,8 @@ public class ActivityTranslateBinding extends android.databinding.ViewDataBindin
         this.translateEditText.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback13 = new android.databinding.generated.callback.OnClickListener(this, 2);
-        mCallback12 = new android.databinding.generated.callback.OnClickListener(this, 1);
+        mCallback13 = new android.databinding.generated.callback.OnClickListener(this, 1);
+        mCallback14 = new android.databinding.generated.callback.OnClickListener(this, 2);
         invalidateAll();
     }
 
@@ -218,8 +218,8 @@ public class ActivityTranslateBinding extends android.databinding.ViewDataBindin
         if ((dirtyFlags & 0x4L) != 0) {
             // api target 1
 
-            this.clearButton.setOnClickListener(mCallback13);
-            this.searchButton.setOnClickListener(mCallback12);
+            this.clearButton.setOnClickListener(mCallback14);
+            this.searchButton.setOnClickListener(mCallback13);
             android.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.translateEditText, (android.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, translateEditTextandroidTextAttrChanged);
         }
         if ((dirtyFlags & 0x6L) != 0) {
@@ -237,23 +237,6 @@ public class ActivityTranslateBinding extends android.databinding.ViewDataBindin
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
         switch(sourceId) {
-            case 2: {
-                // localize variables for thread safety
-                // viewModel
-                com.lst11.learnpolish.presentation.screen.translator.TranslateViewModel viewModel = mViewModel;
-                // viewModel != null
-                boolean viewModelJavaLangObjectNull = false;
-
-
-
-                viewModelJavaLangObjectNull = (viewModel) != (null);
-                if (viewModelJavaLangObjectNull) {
-
-
-                    viewModel.onClickDelete();
-                }
-                break;
-            }
             case 1: {
                 // localize variables for thread safety
                 // viewModel
@@ -268,6 +251,23 @@ public class ActivityTranslateBinding extends android.databinding.ViewDataBindin
 
 
                     viewModel.onClickTranslate();
+                }
+                break;
+            }
+            case 2: {
+                // localize variables for thread safety
+                // viewModel
+                com.lst11.learnpolish.presentation.screen.translator.TranslateViewModel viewModel = mViewModel;
+                // viewModel != null
+                boolean viewModelJavaLangObjectNull = false;
+
+
+
+                viewModelJavaLangObjectNull = (viewModel) != (null);
+                if (viewModelJavaLangObjectNull) {
+
+
+                    viewModel.onClickDelete();
                 }
                 break;
             }

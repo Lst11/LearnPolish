@@ -69,12 +69,12 @@ action#android.intent.action.MAIN
 ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:16:17-69
 	android:name
 		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:16:25-66
-activity#com.lst11.learnpolish.presentation.screen.TranslateActivity
+activity#com.lst11.learnpolish.presentation.screen.translator.TranslateActivity
 ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:21:9-23:40
 	android:noHistory
 		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:22:13-66
+		ADDED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml:22:13-77
 uses-sdk
 INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\User\Desktop\lp\presentation\src\main\AndroidManifest.xml

@@ -2,6 +2,7 @@ package com.lst11.learnpolish.presentation.screen
 
 import android.util.Log
 import com.lst11.learnpolish.presentation.base.BaseViewModel
+import com.lst11.learnpolish.presentation.screen.translator.TranslateActivity
 
 class HomeViewModel : BaseViewModel<Router>() {
 

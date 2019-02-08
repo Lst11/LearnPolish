@@ -29,7 +29,7 @@ abstract class BaseMvvmActivity<VM : BaseViewModel<R>,
         router = provideRouter()
 
 
-        binding.setLifecycleOwner(this)
+//        binding.setLifecycleOwner(this)
     }
 
     override fun onResume() {

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.lst11.learnpolish.presentation.screen.translator.items.WordItemViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wordTextView"
+            style="@style/text_normal"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="@{viewModel.wordRU}"
+            app:layout_constraintEnd_toStartOf="@+id/imageStar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageStar" />
+
+        <ImageView
+            android:id="@+id/imageStar"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+            android:layout_margin="5sp"
+            android:onClick="@{(v)->viewModel.onItemClick()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@{viewModel.isPressed}" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1468,6 +1468,10 @@
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ed0b5c8e5e17d2145fa61260836b4b68\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
+        "merged": "C:\\Users\\User\\Desktop\\lp\\presentation\\build\\intermediates\\res\\merged\\debug\\layout_item_word_translated.xml.flat",
+        "source": "C:\\Users\\User\\Desktop\\lp\\presentation\\src\\main\\res\\layout\\item_word_translated.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\Desktop\\lp\\presentation\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3b5532efbf06139d779b427c4368caea\\res\\drawable\\abc_btn_colored_material.xml"
     },

@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".presentation.screen.TranslateActivity"
+            android:name=".presentation.screen.translator.TranslateActivity"
             android:noHistory="true" />
 
     </application>

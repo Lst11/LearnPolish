@@ -16,6 +16,15 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                     }
                         throw new java.lang.IllegalArgumentException("The tag for top_bar_view is invalid. Received: " + tag);
                 }
+                case com.lst11.learnpolish.R.layout.item_word_translated:
+ {
+                        final Object tag = view.getTag();
+                        if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
+                    if ("layout/item_word_translated_0".equals(tag)) {
+                            return new com.lst11.learnpolish.databinding.ItemWordTranslatedBinding(bindingComponent, view);
+                    }
+                        throw new java.lang.IllegalArgumentException("The tag for item_word_translated is invalid. Received: " + tag);
+                }
                 case com.lst11.learnpolish.R.layout.activity_home:
  {
                         final Object tag = view.getTag();
@@ -56,6 +65,12 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
             case -543100559: {
                 if(tag.equals("layout/top_bar_view_0")) {
                     return com.lst11.learnpolish.R.layout.top_bar_view;
+                }
+                break;
+            }
+            case 1495754869: {
+                if(tag.equals("layout/item_word_translated_0")) {
+                    return com.lst11.learnpolish.R.layout.item_word_translated;
                 }
                 break;
             }

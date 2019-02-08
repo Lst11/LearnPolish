@@ -26,7 +26,7 @@ public class ActivityHomeBindingImpl extends ActivityHomeBinding implements andr
     private final android.support.constraint.ConstraintLayout mboundView0;
     // variables
     @Nullable
-    private final android.view.View.OnClickListener mCallback2;
+    private final android.view.View.OnClickListener mCallback7;
     @Nullable
     private final android.view.View.OnClickListener mCallback6;
     @Nullable
@@ -67,11 +67,11 @@ public class ActivityHomeBindingImpl extends ActivityHomeBinding implements andr
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback2 = new android.databinding.generated.callback.OnClickListener(this, 1);
-        mCallback6 = new android.databinding.generated.callback.OnClickListener(this, 5);
-        mCallback5 = new android.databinding.generated.callback.OnClickListener(this, 4);
-        mCallback4 = new android.databinding.generated.callback.OnClickListener(this, 3);
-        mCallback3 = new android.databinding.generated.callback.OnClickListener(this, 2);
+        mCallback7 = new android.databinding.generated.callback.OnClickListener(this, 5);
+        mCallback6 = new android.databinding.generated.callback.OnClickListener(this, 4);
+        mCallback5 = new android.databinding.generated.callback.OnClickListener(this, 3);
+        mCallback4 = new android.databinding.generated.callback.OnClickListener(this, 2);
+        mCallback3 = new android.databinding.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -141,34 +141,17 @@ public class ActivityHomeBindingImpl extends ActivityHomeBinding implements andr
         if ((dirtyFlags & 0x2L) != 0) {
             // api target 1
 
-            this.cardCardsTraining.setOnClickListener(mCallback4);
-            this.cardDictionary.setOnClickListener(mCallback3);
-            this.cardTimeTraining.setOnClickListener(mCallback5);
-            this.cardTranslate.setOnClickListener(mCallback2);
-            this.cardTranslationTraining.setOnClickListener(mCallback6);
+            this.cardCardsTraining.setOnClickListener(mCallback5);
+            this.cardDictionary.setOnClickListener(mCallback4);
+            this.cardTimeTraining.setOnClickListener(mCallback6);
+            this.cardTranslate.setOnClickListener(mCallback3);
+            this.cardTranslationTraining.setOnClickListener(mCallback7);
         }
     }
     // Listener Stub Implementations
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
         switch(sourceId) {
-            case 1: {
-                // localize variables for thread safety
-                // viewModel
-                com.lst11.learnpolish.presentation.screen.HomeViewModel viewModel = mViewModel;
-                // viewModel != null
-                boolean viewModelJavaLangObjectNull = false;
-
-
-
-                viewModelJavaLangObjectNull = (viewModel) != (null);
-                if (viewModelJavaLangObjectNull) {
-
-
-                    viewModel.onClickTranslate();
-                }
-                break;
-            }
             case 5: {
                 // localize variables for thread safety
                 // viewModel
@@ -234,6 +217,23 @@ public class ActivityHomeBindingImpl extends ActivityHomeBinding implements andr
 
 
                     viewModel.onClickDictionary();
+                }
+                break;
+            }
+            case 1: {
+                // localize variables for thread safety
+                // viewModel
+                com.lst11.learnpolish.presentation.screen.HomeViewModel viewModel = mViewModel;
+                // viewModel != null
+                boolean viewModelJavaLangObjectNull = false;
+
+
+
+                viewModelJavaLangObjectNull = (viewModel) != (null);
+                if (viewModelJavaLangObjectNull) {
+
+
+                    viewModel.onClickTranslate();
                 }
                 break;
             }
