@@ -18,6 +18,9 @@
 
         </activity>
 
-        <activity android:name=".presentation.screen.TranslateActivity"/>
+        <activity
+            android:name=".presentation.screen.TranslateActivity"
+            android:noHistory="true" />
+
     </application>
 </manifest>

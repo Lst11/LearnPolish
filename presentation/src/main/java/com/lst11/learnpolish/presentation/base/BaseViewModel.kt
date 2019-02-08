@@ -1,6 +1,7 @@
 package com.lst11.learnpolish.presentation.base
 
 import android.arch.lifecycle.ViewModel
+import android.util.Log
 
 abstract class BaseViewModel<R : BaseRouter<*>> : ViewModel() {
 
@@ -27,5 +28,9 @@ abstract class BaseViewModel<R : BaseRouter<*>> : ViewModel() {
     override fun onCleared() {
         super.onCleared()
 //        compositeDisposable.clear()
+    }
+
+    open fun onClickBack() {
+        Log.e("aaa", "TranslateViewModel onClickBack")
     }
 }

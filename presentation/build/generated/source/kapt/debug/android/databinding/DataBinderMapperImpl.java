@@ -7,6 +7,15 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
     @Override
     public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
         switch(layoutId) {
+                case com.lst11.learnpolish.R.layout.top_bar_view:
+ {
+                        final Object tag = view.getTag();
+                        if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
+                    if ("layout/top_bar_view_0".equals(tag)) {
+                            return new com.lst11.learnpolish.databinding.TopBarViewBinding(bindingComponent, view);
+                    }
+                        throw new java.lang.IllegalArgumentException("The tag for top_bar_view is invalid. Received: " + tag);
+                }
                 case com.lst11.learnpolish.R.layout.activity_home:
  {
                         final Object tag = view.getTag();
@@ -44,6 +53,12 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
         }
         final int code = tag.hashCode();
         switch(code) {
+            case -543100559: {
+                if(tag.equals("layout/top_bar_view_0")) {
+                    return com.lst11.learnpolish.R.layout.top_bar_view;
+                }
+                break;
+            }
             case 293647131: {
                 if(tag.equals("layout/activity_home_0")) {
                     return com.lst11.learnpolish.R.layout.activity_home;

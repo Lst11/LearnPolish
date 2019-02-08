@@ -3,6 +3,8 @@ package com.lst11.learnpolish.presentation.base
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.ContextThemeWrapper
 import com.lst11.learnpolish.BR
 
 abstract class BaseMvvmActivity<VM : BaseViewModel<R>,
@@ -25,6 +27,9 @@ abstract class BaseMvvmActivity<VM : BaseViewModel<R>,
         binding = DataBindingUtil.setContentView(this, provideLayoutId())
         binding.setVariable(BR.viewModel, viewModel)
         router = provideRouter()
+
+
+        binding.setLifecycleOwner(this)
     }
 
     override fun onResume() {

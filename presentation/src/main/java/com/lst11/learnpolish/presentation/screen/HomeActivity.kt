@@ -2,11 +2,15 @@ package com.lst11.learnpolish.presentation.screen
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.ContextThemeWrapper
 import com.lst11.learnpolish.R
 import com.lst11.learnpolish.databinding.ActivityHomeBinding
 import com.lst11.learnpolish.presentation.base.BaseMvvmActivity
 
 class HomeActivity : BaseMvvmActivity<HomeViewModel, Router, ActivityHomeBinding>() {
+
+
 
     override fun prodiveViewModel(): HomeViewModel {
         return ViewModelProviders.of(this).get(HomeViewModel::class.java)
@@ -18,5 +22,6 @@ class HomeActivity : BaseMvvmActivity<HomeViewModel, Router, ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 }

@@ -22,7 +22,9 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name="com.lst11.learnpolish.presentation.screen.TranslateActivity" />
+        <activity
+            android:name="com.lst11.learnpolish.presentation.screen.TranslateActivity"
+            android:noHistory="true" />
 
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"

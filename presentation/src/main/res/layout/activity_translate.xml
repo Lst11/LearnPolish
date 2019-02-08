@@ -12,62 +12,137 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary">
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/background" />
+
+        <TextView
+            android:id="@+id/fromLanguageTextView"
+            style="@style/text_little"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Russian"
+            app:layout_constraintBottom_toTopOf="@+id/translateEditText"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fromLanguageTextView"
+            app:layout_constraintEnd_toStartOf="@+id/toLanguageTextView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/fromLanguageTextView"
+            app:layout_constraintTop_toTopOf="@+id/fromLanguageTextView"
+            app:srcCompat="@drawable/ic_arrow_forward" />
+
+        <TextView
+            android:id="@+id/toLanguageTextView"
+            style="@style/text_little"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="Polish"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/fromLanguageTextView" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.92" />
 
         <com.lst11.learnpolish.presentation.utils.TopBarView
-            android:id="@+id/activityName"
+            android:id="@+id/topBar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/topBarHeight"
+            app:textName="@string/translator"
             app:visibilityButtonBack="true"
-            app:visibilityButtonSettings="false" />
+            app:visibilityButtonSettings="false"
+            app:viewModel="@{viewModel}"/>
 
-        <!--<EditText-->
-        <!--android:id="@+id/translateEditText"-->
-        <!--style="@style/text_normal"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0sp"-->
-        <!--android:background="@drawable/rounded_edittext"-->
-        <!--android:gravity="top"-->
-        <!--android:hint="hint"-->
-        <!--android:inputType="textMultiLine"-->
-        <!--android:padding="10sp"-->
-        <!--android:paddingEnd="35sp"-->
-        <!--android:paddingRight="15sp"-->
-        <!--android:text="@={viewModel.wordPl}"-->
-        <!--app:layout_constraintDimensionRatio="2:1" />-->
+        <EditText
+            android:id="@+id/translateEditText"
+            style="@style/text_normal"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top"
+            android:hint="@string/hintTranslate"
+            android:inputType="textMultiLine"
+            android:padding="10sp"
+            android:paddingEnd="35sp"
+            android:paddingRight="15sp"
+            android:text="@={viewModel.wordPl}"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintHeight_percent="0.27"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toRightOf="@id/guidelineLeft"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <!--<ImageView-->
-        <!--android:id="@+id/searchButton"-->
-        <!--android:layout_width="@dimen/width_button"-->
-        <!--android:layout_height="@dimen/height_button"-->
-        <!--android:layout_margin="10sp"-->
-        <!--android:clickable="true"-->
-        <!--android:onClick="@{viewModel::onClickTranslate}"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="@+id/translateEditText"-->
-        <!--app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />-->
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+            android:layout_margin="10sp"
+            android:clickable="true"
+            android:onClick="@{()->viewModel.onClickTranslate()}"
+            app:layout_constraintRight_toRightOf="@+id/translateEditText"
+            app:layout_constraintTop_toTopOf="@+id/translateEditText"
+            app:srcCompat="@drawable/ic_arrow_forward" />
 
-        <!--<ImageView-->
-        <!--android:id="@+id/clearButton"-->
-        <!--android:layout_width="@dimen/width_button"-->
-        <!--android:layout_height="@dimen/height_button"-->
-        <!--android:layout_margin="10sp"-->
-        <!--android:clickable="true"-->
-        <!--android:onClick="@{viewModel::onClickDelete}"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/searchButton"-->
-        <!--app:srcCompat="@drawable/ic_clear_24dp" />-->
+        <ImageView
+            android:id="@+id/clearButton"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+            android:layout_margin="10sp"
+            android:clickable="true"
+            android:onClick="@{()->viewModel.onClickDelete()}"
+            app:layout_constraintRight_toRightOf="@id/translateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/searchButton"
+            app:srcCompat="@drawable/ic_clear" />
 
-        <!--<android.support.v7.widget.RecyclerView-->
-        <!--android:id="@+id/recyclerView"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0sp"-->
-        <!--android:layout_marginTop="30sp"-->
-        <!--android:background="@drawable/rounded_recycler_view"-->
-        <!--android:padding="10sp"-->
-        <!--app:layout_constraintBottom_toBottomOf="@id/layout"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/translateEditText" />-->
-
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:background="@drawable/rounded_recycler_view"
+            android:padding="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/translateEditText"
+            app:layout_constraintVertical_bias="0.493" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
