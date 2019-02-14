@@ -1,5 +1,6 @@
 package com.lst11.data.net
 
+import android.util.Log
 import com.lst11.data.entity.WordRequest
 import com.lst11.data.utils.Transformer
 import com.lst11.domain.entity.Word
@@ -38,6 +39,7 @@ class RestService(apiUrl: String) {
     fun getTranslate(wordPL: String): Observable<Word>? {
         val wordRequest = WordRequest(wordPL)
         return restApi.getTranslate(wordRequest.key,wordRequest.lang, wordRequest.wordPL)
+                .doOnNext { Log.e("aaa","RestService: getTranslate ${it.listOfWords}") }
 //                ?.observeOn(Schedulers.computation())
 //                ?.subscribeOn(Schedulers.io())
                 ?.map { Transformer.transformResponseToDomain(wordPL,it)}

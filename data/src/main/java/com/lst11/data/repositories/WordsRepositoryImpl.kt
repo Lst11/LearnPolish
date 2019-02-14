@@ -17,9 +17,9 @@ class WordsRepositoryImpl @Inject constructor(val restService: RestService,
 
     override fun getTranslate(wordPL: String): Observable<Word>? {
         Log.e("aaa", "WordsRepositoryImpl : getTranslate + $wordPL")
-        val newWord = Word("aaa", mutableListOf("bbb", "ccc", "ddd", "eee", "jjj", "ggg", "hhh", "lll", "kkk"))
-//        return restService.getTranslate(wordPL)
-        return Observable.just(newWord)
+//        val newWord = Word("aaa", mutableListOf("bbb", "ccc", "ddd", "eee", "jjj", "ggg", "hhh", "lll", "kkk"))
+//        return Observable.just(newWord)
+        return restService.getTranslate(wordPL)
     }
 
     fun saveAll() {
