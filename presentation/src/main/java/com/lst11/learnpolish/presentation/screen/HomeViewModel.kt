@@ -1,12 +1,14 @@
 package com.lst11.learnpolish.presentation.screen
 
+import android.support.v7.widget.AppCompatImageView
 import android.util.Log
+import android.view.View
 import com.lst11.learnpolish.presentation.base.BaseViewModel
 import com.lst11.learnpolish.presentation.screen.translator.TranslateActivity
 
 class HomeViewModel : BaseViewModel<Router>() {
 
-    fun onClickTranslate() {
+    fun onClickTranslate(v: AppCompatImageView) {
         Log.e("aaa", "HomeViewModel onClickTranslate")
         router?.goToMenuItem(TranslateActivity())
     }

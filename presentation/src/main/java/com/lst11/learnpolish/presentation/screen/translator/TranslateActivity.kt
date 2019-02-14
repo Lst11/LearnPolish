@@ -4,7 +4,6 @@ import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import com.lst11.learnpolish.R
-import com.lst11.learnpolish.databinding.ActivityHomeBinding
 import com.lst11.learnpolish.databinding.ActivityTranslateBinding
 import com.lst11.learnpolish.presentation.base.BaseMvvmActivity
 import com.lst11.learnpolish.presentation.screen.Router

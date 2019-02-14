@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\User\\Desktop\\lp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_translate.xml",
+        "source": "C:\\Users\\User\\Desktop\\lp\\presentation\\src\\main\\res\\layout-land\\activity_translate.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\Desktop\\lp\\presentation\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_home.xml",
         "source": "C:\\Users\\User\\Desktop\\lp\\presentation\\src\\main\\res\\layout-land\\activity_home.xml"
     }

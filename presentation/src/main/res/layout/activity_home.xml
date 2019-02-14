@@ -67,7 +67,7 @@
             android:layout_width="@dimen/cardSize"
             android:layout_height="@dimen/cardSize"
             android:clickable="true"
-            android:onClick="@{()->viewModel.onClickTranslate()}"
+            android:onClick="@{(v)->viewModel.onClickTranslate(v)}"
             app:image="@drawable/ic_translate"
             app:layout_constraintBottom_toTopOf="@+id/trainingsTextView"
             app:layout_constraintEnd_toStartOf="@+id/cardDictionary"

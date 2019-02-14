@@ -25,24 +25,15 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                     }
                         throw new java.lang.IllegalArgumentException("The tag for item_word_translated is invalid. Received: " + tag);
                 }
-                case com.lst11.learnpolish.R.layout.activity_home:
- {
-                        final Object tag = view.getTag();
-                        if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
-                    if ("layout/activity_home_0".equals(tag)) {
-                            return new com.lst11.learnpolish.databinding.ActivityHomeBindingImpl(bindingComponent, view);
-                    }
-                    if ("layout-land/activity_home_0".equals(tag)) {
-                            return new com.lst11.learnpolish.databinding.ActivityHomeBindingLandImpl(bindingComponent, view);
-                    }
-                        throw new java.lang.IllegalArgumentException("The tag for activity_home is invalid. Received: " + tag);
-                }
                 case com.lst11.learnpolish.R.layout.activity_translate:
  {
                         final Object tag = view.getTag();
                         if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
+                    if ("layout-land/activity_translate_0".equals(tag)) {
+                            return new com.lst11.learnpolish.databinding.ActivityTranslateBindingLandImpl(bindingComponent, view);
+                    }
                     if ("layout/activity_translate_0".equals(tag)) {
-                            return new com.lst11.learnpolish.databinding.ActivityTranslateBinding(bindingComponent, view);
+                            return new com.lst11.learnpolish.databinding.ActivityTranslateBindingImpl(bindingComponent, view);
                     }
                         throw new java.lang.IllegalArgumentException("The tag for activity_translate is invalid. Received: " + tag);
                 }
@@ -74,15 +65,9 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                 }
                 break;
             }
-            case 293647131: {
-                if(tag.equals("layout/activity_home_0")) {
-                    return com.lst11.learnpolish.R.layout.activity_home;
-                }
-                break;
-            }
-            case -751807841: {
-                if(tag.equals("layout-land/activity_home_0")) {
-                    return com.lst11.learnpolish.R.layout.activity_home;
+            case -1061413616: {
+                if(tag.equals("layout-land/activity_translate_0")) {
+                    return com.lst11.learnpolish.R.layout.activity_translate;
                 }
                 break;
             }
